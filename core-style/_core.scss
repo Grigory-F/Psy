@@ -1,0 +1,9 @@
+// Библиотеки
+@import 'vendor/normalize';
+// Основа
+@import 'config/fonts';
+@import 'config/parameters';
+@import 'config/mixins';
+@import 'config/template';
+// Компоненты
+@import 'components/button';

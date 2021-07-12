@@ -1,0 +1,206 @@
+@import "../core-style/core";
+.page {
+  margin: 0;
+  background-color: #f3f3f3;
+  font-family: "CenturyGothic";
+}
+.test-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  &__container-form {
+    margin: 0 auto;
+    width: 1300px;
+  }
+  &__slider {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  &__container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  &__counter {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 20px 0 -20px 20px;
+  }
+}
+.question {
+  min-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  &__title {
+    font-size: 48px;
+    margin-top: 0;
+  }
+  &__image {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__warning {
+    color: red;
+    font-size: 15px;
+    display: none;
+    margin: 0 0 15px 0;
+    &--active {
+      display: inline-block;
+    }
+  }
+  &__answers {
+    margin-bottom: -20px;
+    max-width: 500px;
+  }
+  &__controls {
+  }
+  &__desc {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 500px;
+  }
+}
+.question-conrols {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  &__back {
+    margin-right: 20px;
+    border: 1px solid black;
+  }
+
+  &__following {
+    border: 1px solid $color-primary;
+  }
+
+  &__following--link-hidden {
+    display: none;
+    text-decoration: none;
+    color: black;
+    border: 1px solid $color-primary;
+  }
+}
+.buttton-test {
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.answer {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  &__label {
+    font-size: 16px;
+    margin: 0;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  &__input {
+    display: none;
+  }
+  &__input:checked + &__label {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  &__input:checked + &__label &__arrow {
+    visibility: visible;
+  }
+  &__arrow {
+    min-width: 25px;
+    min-height: 25px;
+    visibility: hidden;
+    margin-left: 10px;
+    position: relative;
+  }
+  &__arrow::before,
+  &__arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: rgba(0, 255, 209, 1);
+  }
+  &__arrow::before {
+    left: 10px;
+    transform: rotate(-45deg);
+    width: 15px;
+    top: calc(50% - 2px);
+  }
+  &__arrow::after {
+    transform: rotate(45deg);
+    width: 10px;
+    left: 5px;
+    top: calc(50% - 1px);
+  }
+}
+
+@media (max-width: $desctop + px) {
+  .test-layout {
+    width: 100%;
+    &__container-form {
+      margin: 0 auto;
+      width: 90%;
+      transform: translateX();
+    }
+  }
+}
+@media (max-width: $laptop + px) {
+  .test-layout {
+    width: 100%;
+    height: auto;
+    &__container-form {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: $tablet + px) {
+  .test-layout {
+    height: auto;
+    display: block;
+    &__container-form {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+  .question {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    &__counter {
+    }
+
+    &__title {
+      @include calculate-size(font-size, 48, 30, $tablet);
+    }
+
+    &__answers {
+    }
+  }
+  .answer {
+    display: flex;
+    width: auto;
+    max-width: 500px;
+    margin: 0 0 20px 0;
+    &__title {
+    }
+    &__checkbox {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile + px) {
+}

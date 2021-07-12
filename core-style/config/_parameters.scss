@@ -1,0 +1,64 @@
+/* Fonts */
+$fonts-progect: "CenturyGothic";
+
+// Цвета
+$color-primary: #ffa500;
+$color-secondary: #888;
+$color-tretiary: #e0e0e0;
+$color-lightest: #654321;
+$color-brand: #239bf6;
+$color-bg: #f3f3f3;
+
+$color-rarely: #654321;
+// Цвета
+$cr-dark-bg: rgba(255, 255, 255, 0.5);
+$cr-title: #654321;
+$cr-subtitle: #654321;
+$cr-text: #654321;
+$cr-text-second: #808080;
+
+// Border
+$border-bold: solid 3px #ffa500;
+$border-light: solid 1px rgba(0, 0, 0, 0.5);
+
+/* Shadows */
+$main-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+
+// Font size
+$fs-title: 48px;
+$fs-title-media: 32px;
+$fs-min-title: 28px;
+
+$fs-middle: 24px;
+$fs-middle-media: 20px;
+
+$fs-subtitle-b: 1.2rem;
+$fs-subtitle-s: 1.2rem;
+
+$fs-link-b: 1.2rem;
+$fs-link-s: 1.2rem;
+
+$fs-mtext-b: 1.2rem;
+$fs-mtext-s: 1.2rem;
+// Отступы
+$s-small: 0.75rem;
+$s-single: 1rem;
+$s-double: 2rem;
+$s-triple: 3rem;
+$s-big: 6rem;
+
+// Media queries
+$desctop: 1440;
+$laptop: 1024;
+$tablet: 768;
+$mobile: 480;
+
+// Шрифты
+$font-title: "CenturyGothic";
+$font-subtitle: "CenturyGothic";
+$font-base: "CenturyGothic";
+
+// Анимация
+$anime-act: .2s ease;
+$anime-in: 0.4s;
+$anime-out: 0.5s;

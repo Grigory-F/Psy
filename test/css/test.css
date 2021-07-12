@@ -1,0 +1,504 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  font-display: swap;
+  src: url("/fonts/CenturyGothic.woff2") format("woff2"), url("/fonts/CenturyGothic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  font-display: swap;
+  src: url("/fonts/CenturyGothic-Bold.woff2") format("woff2"), url("/fonts/CenturyGothic-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Fonts */
+/* Shadows */
+.page {
+  margin: 0;
+  background-color: #f3f3f3;
+  font-family: "CenturyGothic";
+}
+
+.test-layout {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.test-layout__container-form {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.test-layout__slider {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.test-layout__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.test-layout__counter {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 20px 0 -20px 20px;
+}
+
+.question {
+  min-width: 100%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+.question__title {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.question__image {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.question__warning {
+  color: red;
+  font-size: 15px;
+  display: none;
+  margin: 0 0 15px 0;
+}
+
+.question__warning--active {
+  display: inline-block;
+}
+
+.question__answers {
+  margin-bottom: -20px;
+  max-width: 500px;
+}
+
+.question__desc {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  max-width: 500px;
+}
+
+.question-conrols {
+  width: 100%;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.question-conrols__back {
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+.question-conrols__following {
+  border: 1px solid #ffa500;
+}
+
+.question-conrols__following--link-hidden {
+  display: none;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ffa500;
+}
+
+.buttton-test {
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.answer {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.answer__label {
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.answer__input {
+  display: none;
+}
+
+.answer__input:checked + .answer__label {
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.answer__input:checked + .answer__label .answer__arrow {
+  visibility: visible;
+}
+
+.answer__arrow {
+  min-width: 25px;
+  min-height: 25px;
+  visibility: hidden;
+  margin-left: 10px;
+  position: relative;
+}
+
+.answer__arrow::before, .answer__arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: #00ffd1;
+}
+
+.answer__arrow::before {
+  left: 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 15px;
+  top: calc(50% - 2px);
+}
+
+.answer__arrow::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 10px;
+  left: 5px;
+  top: calc(50% - 1px);
+}
+
+@media (max-width: 1440px) {
+  .test-layout {
+    width: 100%;
+  }
+  .test-layout__container-form {
+    margin: 0 auto;
+    width: 90%;
+    -webkit-transform: translateX();
+            transform: translateX();
+  }
+}
+
+@media (max-width: 1024px) {
+  .test-layout {
+    width: 100%;
+    height: auto;
+  }
+  .test-layout__container-form {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .test-layout {
+    height: auto;
+    display: block;
+  }
+  .test-layout__container-form {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .question {
+    min-width: 100%;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .question__title {
+    font-size: calc(30px + 18 * ((100vw - 320px) / 448));
+  }
+  .answer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    max-width: 500px;
+    margin: 0 0 20px 0;
+  }
+  .answer__checkbox {
+    display: none;
+  }
+}

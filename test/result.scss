@@ -1,0 +1,479 @@
+@import "../core-style/core";
+.page {
+  margin: 0;
+  background-color: #f3f3f3;
+  font-family: "CenturyGothic";
+}
+.layout {
+  width: 1300px;
+  margin: 0 auto 30px auto;
+}
+
+.result-sect {
+  &__layout {
+    padding: 30px 0 0 0;
+    box-sizing: border-box;
+  }
+  &__text {
+  }
+
+  &__title {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+}
+.title {
+  font-size: 48px;
+  text-align: center;
+}
+.button-ax {
+  display: inline-block;
+  padding: 10px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+.gen-result {
+  max-width: 400px;
+  margin: 0 auto;
+  &__text {
+  }
+
+  &__title {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+  }
+
+  &__generate {
+  }
+
+  &__wrap-controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__save-button {
+    border: 1px solid $color-primary;
+    margin-right: 10px;
+  }
+  &__more-button {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+}
+.clarification {
+  width: 100%;
+  margin-bottom: 20px;
+  &__button {
+    padding: 15px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-weight: 400;
+    margin: 0 15px 0 0;
+  }
+
+  &__arrows {
+    align-self: flex-start;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    transition: transform 0.3s ease;
+  }
+  &__arrows::before,
+  &__arrows::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 50%;
+    top: calc(50% - 1px);
+    background-color: black;
+  }
+  &__arrows::before {
+    transform: rotate(45deg);
+    left: 2px;
+  }
+  &__arrows::after {
+    transform: rotate(-45deg);
+    right: 2px;
+  }
+
+  &__inner-text {
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
+.active .clarification__arrows {
+  transform: rotate(180deg);
+}
+
+.generate {
+}
+.generate-scale {
+  width: 100%;
+  display: none;
+  margin-bottom: 20px;
+
+  &__name-scale {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+  }
+
+  &__wrap-scale {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner-scale {
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: white;
+    display: flex;
+  }
+
+  &__dot {
+    margin-right: 5px;
+    width: 10%;
+    visibility: hidden;
+    background-color: #faff00;
+    box-sizing: border-box;
+  }
+
+  &__num {
+    color: red;
+  }
+
+  &__result {
+    margin: 0;
+  }
+}
+.generate-text {
+  &__name-scale {
+    font-weight: 700;
+  }
+
+  &__gen {
+    font-weight: 400;
+  }
+
+  &__desc {
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+  }
+}
+
+.form-sect {
+  &__layout {
+  }
+  &__title {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 48px;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 0 30px 0;
+  }
+}
+.select {
+  appearance: none;
+  cursor: pointer;
+}
+.arrows {
+  min-width: 20px;
+  min-height: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  transition: 0.3s ease;
+}
+.arrows::before,
+.arrows::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: calc(50% - 1px);
+  width: 50%;
+  height: 2px;
+  background-color: black;
+}
+.arrows::before {
+  transform: rotate(45deg);
+  left: 2px;
+}
+.arrows::after {
+  transform: rotate(-45deg);
+  right: 2px;
+}
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  &__item {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &__label {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 18px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  &__error {
+    font-size: 20px;
+    color: red;
+    margin: 0;
+  }
+
+  &__select {
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    appearance: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  }
+  &__select:focus + .arrows {
+    transform: rotate(180deg);
+  }
+  &__problem {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    min-height: 200px;
+    resize: none;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  }
+  &__select-item {
+  }
+
+  &__title-psy {
+    font-size: 24px;
+  }
+
+  &__input-radio {
+    display: none;
+  }
+  &__input-radio:checked + &__radio-label {
+  }
+  &__cart-photo {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  &__input-radio:checked + &__radio-cart {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  &__radio-cart {
+    width: 100%;
+    margin-right: 15px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+  }
+  &__radio-cart:last-child {
+    margin: 0;
+    min-height: 140px;
+  }
+  &__radio-label {
+    font-size: 18px;
+    display: inline-block;
+    margin: 5px;
+  }
+
+  &__button {
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    outline: none;
+    padding: 15px 20px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.flex {
+  display: flex;
+}
+.item-flex {
+  display: flex;
+  &__inner-date {
+    width: 100%;
+    margin-right: 20px;
+    position: relative;
+  }
+  &__inner-date:last-child {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  &__date-label {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  &__date-select {
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    appearance: none;
+    cursor: pointer;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+  }
+  &__date-select:focus + .arrows {
+    transform: rotate(180deg);
+  }
+
+  &__select-item {
+  }
+}
+@media (max-width: $desctop + px) {
+  .result-sect {
+    &__layout {
+    }
+  }
+  .layout {
+    width: 90%;
+  }
+}
+
+@media (max-width: $tablet + px) {
+  .result {
+    width: 100%;
+    &__separator {
+      display: none;
+    }
+    &__subtitle {
+      @include calculate-size(font-size, 24, 16, $tablet);
+      margin-bottom: 0;
+    }
+  }
+  .result-sect {
+    &__layout {
+      display: block;
+      @include calculate-size(padding-top, 30, 10, $tablet);
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+  .item-flex {
+    &__date-label {
+      @include calculate-size(font-size, 20, 16, $tablet);
+    }
+  }
+  .gen-result {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .button-ax {
+    align-self: center;
+  }
+  .title {
+    @include calculate-size(font-size, 48, 30, $tablet);
+  }
+  .min-title {
+    @include calculate-size(font-size, 24, 20, $tablet);
+  }
+  .form {
+    &__label {
+      @include calculate-size(font-size, 20, 16, $tablet);
+    }
+    &__radio-label {
+      @include calculate-size(font-size, 18, 16, $tablet);
+    }
+  }
+}
+
+@media (max-width: $mobile + px) {
+  .flex {
+    display: block;
+  }
+  .item-flex {
+    display: flex;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__inner-date {
+    }
+  }
+  .form {
+    &__radio-cart {
+      flex: 0 1 120px;
+      margin: 0 15px 0 0;
+    }
+  }
+  .item-flex {
+    &__inner-date {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 432px) {
+  .item-flex {
+    margin-right: 0;
+  }
+  .form {
+    &__radio-cart {
+      flex: 0 1 120px;
+      margin: 0 15px 15px 0;
+    }
+  }
+}
